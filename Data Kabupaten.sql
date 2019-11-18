@@ -27,8 +27,7 @@ CREATE TABLE `city` (
   `name` varchar(100) DEFAULT NULL,
   `provinces_id` int(11) NOT NULL,
   PRIMARY KEY (`city_id`),
-  KEY `fk_city_provinces1_idx` (`provinces_id`),
-  CONSTRAINT `fk_city_provinces1` FOREIGN KEY (`provinces_id`) REFERENCES `provinces` (`provinces_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_city_provinces1_idx` (`provinces_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=512 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

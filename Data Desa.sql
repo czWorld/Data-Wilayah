@@ -27,8 +27,7 @@ CREATE TABLE `village` (
   `name` varchar(100) DEFAULT NULL,
   `districts_id` int(11) NOT NULL,
   PRIMARY KEY (`village_id`),
-  KEY `fk_village_districts1_idx` (`districts_id`),
-  CONSTRAINT `fk_village_districts1` FOREIGN KEY (`districts_id`) REFERENCES `districts` (`districts_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_village_districts1_idx` (`districts_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=77743 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
